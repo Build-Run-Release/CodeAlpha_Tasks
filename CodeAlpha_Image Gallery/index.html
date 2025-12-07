@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Image Gallery</title>
+    <meta name="description" content="A simple, responsive image gallery with a lightbox view.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="gallery-header">
+        <h1>Visionary Gallery</h1>
+        <p>Explore a collection of AI-generated masterpieces.</p>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="technology">Technology</button>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img1.png" alt="Misty Mountain Landscape" loading="lazy">
+                <div class="overlay">
+                    <span>View Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img_nature_2.png" alt="Forest Path" loading="lazy">
+                <div class="overlay">
+                    <span>View Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img_nature_3.png" alt="Waterfall" loading="lazy">
+                <div class="overlay">
+                    <span>View Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img_nature_4.png" alt="Cherry Blossoms" loading="lazy">
+                <div class="overlay">
+                    <span>View Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img_nature_5.png" alt="Aurora Borealis" loading="lazy">
+                <div class="overlay">
+                    <span>View Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="images/img2.png" alt="Abstract Neon Art" loading="lazy">
+                <div class="overlay">
+                    <span>View Abstract</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="images/img_abstract_2.png" alt="Liquid Marble" loading="lazy">
+                <div class="overlay">
+                    <span>View Abstract</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="images/img_abstract_3.png" alt="Geometric Shapes" loading="lazy">
+                <div class="overlay">
+                    <span>View Abstract</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="images/img_abstract_4.png" alt="Glitch Art" loading="lazy">
+                <div class="overlay">
+                    <span>View Abstract</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="images/img_abstract_5.png" alt="Sunset Gradient" loading="lazy">
+                <div class="overlay">
+                    <span>View Abstract</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="images/img3.png" alt="Modern Skyscraper" loading="lazy">
+                <div class="overlay">
+                    <span>View Architecture</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="images/img_arch_2.png" alt="Futuristic Bridge" loading="lazy">
+                <div class="overlay">
+                    <span>View Architecture</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="images/img_arch_3.png" alt="Parametric Facade" loading="lazy">
+                <div class="overlay">
+                    <span>View Architecture</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="images/img_arch_4.png" alt="Minimalist Interior" loading="lazy">
+                <div class="overlay">
+                    <span>View Architecture</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="images/img_arch_5.png" alt="Spiral Staircase" loading="lazy">
+                <div class="overlay">
+                    <span>View Architecture</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="images/img4.png" alt="Futuristic Circuit Board" loading="lazy">
+                <div class="overlay">
+                    <span>View Tech</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="images/img_tech_2.png" alt="Holographic UI" loading="lazy">
+                <div class="overlay">
+                    <span>View Tech</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="images/img_tech_3.png" alt="Robotic Arm" loading="lazy">
+                <div class="overlay">
+                    <span>View Tech</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="images/img_tech_4.png" alt="VR Headset" loading="lazy">
+                <div class="overlay">
+                    <span>View Tech</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="images/img_tech_5.png" alt="Server Room" loading="lazy">
+                <div class="overlay">
+                    <span>View Tech</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
